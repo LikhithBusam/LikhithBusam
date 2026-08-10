@@ -16,6 +16,12 @@ An agentic RAG-powered predictive maintenance platform for industrial equipment 
 A fully self-hosted (no external LLM API) medical RAG system that answers medication questions in Arabic or English from a corpus of patient information leaflets, using hybrid dense+BM25 retrieval and a locally-hosted Qwen2.5-7B model. Every answer is checked against its retrieved source before being shown — the groundedness gate fails closed and has caught a real fabricated answer during evaluation. Cross-lingual retrieval (Arabic query → English source) is measured, not assumed.
 `RAG` `LLM` `Qwen2.5` `Hybrid Retrieval` `Arabic NLP`
 
+#### Collaborations
+
+**[JEPA-Med-OOD](https://github.com/Nikhil-Rao20/JEPA-Med-OOD)** — Self-Supervised Learning for Out-of-Distribution Detection in Medical Imaging
+Team project comparing JEPA, MAE, and supervised learning for chest X-ray OOD detection — evaluating not just classification accuracy but each method's ability to flag data it wasn't trained on, a key safety requirement for clinical AI deployment.
+`PyTorch` `Self-Supervised Learning` `Medical Imaging` `OOD Detection`
+
 #### Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
