@@ -1,6 +1,6 @@
-### Hi, I'm Likhith — AI/ML Engineer building agentic AI systems
+### Likhith Busam — AI Engineer
 
-I design and ship multi-agent, RAG, and LLM-orchestration systems end to end: research/experiment harness, typed production backend, and the dashboard to operate it. Below are the three projects that best represent how I work.
+I build multi-agent and RAG systems end to end: experiment harness, typed production backend, operator dashboard. Three projects below show how I work.
 
 #### Featured Work
 
@@ -28,23 +28,10 @@ A collaborative study platform with AI-generated flashcards, quizzes, and docume
 
 #### Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-337ab7?style=flat)
-![FAISS](https://img.shields.io/badge/FAISS-4B8BBE?style=flat)
+`Python` `TypeScript` `LangChain` `LangGraph` `FastAPI` `React` `PyTorch` `XGBoost` `FAISS`
 
 #### Currently
 
 - Building production-track infrastructure for multi-agent systems: memory, tracing, tool-failure handling
 - B.Tech, Rajiv Gandhi University of Knowledge Technologies, Andhra Pradesh
 - Open to AI Engineer internship roles
-
-#### GitHub Stats
-
-![Likhith's GitHub stats](https://github-readme-stats.vercel.app/api?username=LikhithBusam&show_icons=true&theme=default&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LikhithBusam&layout=compact&hide_border=true)
