@@ -22,6 +22,10 @@ A fully self-hosted (no external LLM API) medical RAG system that answers medica
 Team project comparing JEPA, MAE, and supervised learning for chest X-ray OOD detection — evaluating not just classification accuracy but each method's ability to flag data it wasn't trained on, a key safety requirement for clinical AI deployment.
 `PyTorch` `Self-Supervised Learning` `Medical Imaging` `OOD Detection`
 
+**[StudyGenie Hub](https://github.com/santhoshkumaritla/Study-Genie)** — AI-Powered Study Platform (Peekuthon Hackathon)
+A collaborative study platform with AI-generated flashcards, quizzes, and document summarization, an AI tutoring chatbot, and real-time collaborative study rooms with shared notes and live chat.
+`React` `TypeScript` `Node.js` `MongoDB`
+
 #### Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
