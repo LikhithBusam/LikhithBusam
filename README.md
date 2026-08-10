@@ -12,9 +12,9 @@ A LangGraph-orchestrated, memory-augmented multi-agent pipeline (7 typed agents:
 An agentic RAG-powered predictive maintenance platform for industrial equipment (CNC, bearings, pumps, turbofan engines). A 3-stage pipeline — XGBoost fault classification/RUL regression, FAISS semantic search over 1,527 knowledge chunks, and LLM-based diagnostic reasoning — served through a FastAPI backend and real-time dashboard. Backed by a 112-test suite (111 passing) covering ML validation, RAG retrieval, and API correctness.
 `XGBoost` `FAISS` `FastAPI` `sentence-transformers` `scikit-learn`
 
-**[SMART_FARMING](https://github.com/LikhithBusam/SMART_FARMING)** — AI Farming Assistant
-A Streamlit application combining an MCP server for codebase/tooling analysis, LangChain + Gemini for conversational farming advice, TensorFlow-based plant disease detection from images, and live weather-integrated recommendations.
-`LangChain` `Gemini` `TensorFlow` `Streamlit` `MCP`
+**[GroundedRx](https://github.com/LikhithBusam/GroundedRx)** — Bilingual Medical RAG with a Groundedness Gate
+A fully self-hosted (no external LLM API) medical RAG system that answers medication questions in Arabic or English from a corpus of patient information leaflets, using hybrid dense+BM25 retrieval and a locally-hosted Qwen2.5-7B model. Every answer is checked against its retrieved source before being shown — the groundedness gate fails closed and has caught a real fabricated answer during evaluation. Cross-lingual retrieval (Arabic query → English source) is measured, not assumed.
+`RAG` `LLM` `Qwen2.5` `Hybrid Retrieval` `Arabic NLP`
 
 #### Tech Stack
 
