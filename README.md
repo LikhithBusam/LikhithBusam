@@ -1,6 +1,6 @@
 ### Likhith Busam — AI Engineer
 
-I build multi-agent and RAG systems end to end: experiment harness, typed production backend, operator dashboard. Three projects below show how I work.
+I build multi-agent and RAG systems end to end: experiment harness, typed production backend, operator dashboard. Five projects below show how I work.
 
 #### Featured Work
 
@@ -8,13 +8,21 @@ I build multi-agent and RAG systems end to end: experiment harness, typed produc
 A LangGraph-orchestrated, memory-augmented multi-agent pipeline (7 typed agents: Intake, Planner, Executor, Critic/Replanner, Memory Manager, Response, Escalation) with a research track (paper-citable ablation results comparing memoryless vs. static-ReAct vs. memory-augmented vs. policy-memory baselines) and a production track (FastAPI backend, per-client auth, OpenTelemetry tracing, Stripe/Zendesk tool integrations, PII redaction) plus a 15-page React operations dashboard with a live LangGraph execution-trace visualizer.
 `LangGraph` `FastAPI` `React` `ChromaDB` `OpenTelemetry`
 
-**[predictive_Intelligence](https://github.com/LikhithBusam/predictive_Intelligence)** — Predictive Intelligence 360
-An agentic RAG-powered predictive maintenance platform for industrial equipment (CNC, bearings, pumps, turbofan engines). A 3-stage pipeline — XGBoost fault classification/RUL regression, FAISS semantic search over 1,527 knowledge chunks, and LLM-based diagnostic reasoning — served through a FastAPI backend and real-time dashboard. Backed by a 112-test suite (111 passing) covering ML validation, RAG retrieval, and API correctness.
-`XGBoost` `FAISS` `FastAPI` `sentence-transformers` `scikit-learn`
-
 **[GroundedRx](https://github.com/LikhithBusam/GroundedRx)** — Bilingual Medical RAG with a Groundedness Gate
 A fully self-hosted (no external LLM API) medical RAG system that answers medication questions in Arabic or English from a corpus of patient information leaflets, using hybrid dense+BM25 retrieval and a locally-hosted Qwen2.5-7B model. Every answer is checked against its retrieved source before being shown — the groundedness gate fails closed and has caught a real fabricated answer during evaluation. Cross-lingual retrieval (Arabic query → English source) is measured, not assumed.
 `RAG` `LLM` `Qwen2.5` `Hybrid Retrieval` `Arabic NLP`
+
+**[Smart_Reco](https://github.com/LikhithBusam/Smart_Reco)** — Agentic Behavioral Recommendation Platform
+A LangGraph agent (`should_trigger → analyze_interest → retrieve → evaluate_retrieval → refine_query? → generate_recommendation → persist`) that watches user activity and recommends courses, gated so most page loads cost zero LLM tokens. Grounding is enforced in code, not just prompted for — `persist()` filters model output against the actual retrieved product set before writing, so a hallucinated ID never reaches storage — backed by a transactional outbox pattern for Postgres→Chroma sync, a Redis lock to stop duplicate agent runs, and 66 mocked tests plus a separate live-retrieval smoke test that seeds real embeddings and checks top-3 recall.
+`FastAPI` `LangGraph` `Chroma` `PostgreSQL` `Redis`
+
+**[Kamai-Financial-Companion](https://github.com/LikhithBusam/Kamai-Financial-Companion)** — AI Financial Companion for India's Gig Workers
+A 9-agent FastAPI pipeline (budget, tax, risk, savings, and more) where every number — tax slabs, debt-to-income ratios, volatility forecasts — comes from deterministic Python formulas, not the LLM; Gemini/Groq are used only to narrate already-computed results, a deliberate choice since a hallucinated tax figure is a compliance problem, not a UX bug. Supabase Row Level Security enforces per-user data isolation, every backend endpoint verifies a Supabase-issued JWT against JWKS, and a 29-test pytest suite covers the deterministic finance calculations under CI.
+`FastAPI` `React` `Supabase` `PostgreSQL` `Gemini`
+
+**[predictive_Intelligence](https://github.com/LikhithBusam/predictive_Intelligence)** — Predictive Intelligence 360
+An agentic RAG-powered predictive maintenance platform for industrial equipment (CNC, bearings, pumps, turbofan engines). A 3-stage pipeline — XGBoost fault classification/RUL regression, FAISS semantic search over 1,527 knowledge chunks, and LLM-based diagnostic reasoning — served through a FastAPI backend and real-time dashboard. Backed by a 112-test suite (111 passing) covering ML validation, RAG retrieval, and API correctness.
+`XGBoost` `FAISS` `FastAPI` `sentence-transformers` `scikit-learn`
 
 #### Collaborations
 
@@ -28,7 +36,7 @@ A collaborative study platform with AI-generated flashcards, quizzes, and docume
 
 #### Tech Stack
 
-`Python` `TypeScript` `LangChain` `LangGraph` `FastAPI` `React` `PyTorch` `XGBoost` `FAISS`
+`Python` `TypeScript` `LangChain` `LangGraph` `FastAPI` `React` `PyTorch` `XGBoost` `FAISS` `PostgreSQL` `Redis` `Supabase`
 
 #### Currently
 
